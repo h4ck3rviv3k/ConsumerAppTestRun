@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        Log.d(TAG, requestUrl + "" + response.toString());
+                        Log.d(TAG, requestUrl + "-->" + response.toString());
                         addTextViewDynamically(requestUrl + ": ", "SUCCESS", true);
                         TOTAL_API_COUNT--;
 
